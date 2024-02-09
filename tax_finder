@@ -7,4 +7,13 @@ def calc_tax(de_amount, vat_rate):
     salary = de_amount - tax_amount
     return tax_amount, salary
 
+# Function to handle button click and display result
+def answer():
+    try:
+        # Get the salary amount from the Entry widget
+        de_amount = float(Amount_entry.get())
+        vat_rate = 0.15#set your desired vatrate here
+
+        # calculate tax and salary using calc_tax function
+        tax_amount, salary = calc_tax(de_amount, vat_rate)
 
