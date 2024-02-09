@@ -1,14 +1,12 @@
-# Function to handle button click and display result
-def answer():
-    try:
-        # Get the salary amount from the Entry widget
-        de_amount = float(Amount_entry.get())
-        vat_rate = 0.15#set your desired vatrate here
+ # display the result in a label widget with a more formal font
+        result_label = Label(result_window, text=f"Amount: ${de_amount:.2f}\nTax: ${tax_amount:.2f}\nFinal amount: ${salary:.2f}", font=("Helvetica", 12))
+        result_label.pack(pady=20)
 
-        # calculate tax and salary using calc_tax function
-        tax_amount, salary = calc_tax(de_amount, vat_rate)
+    except ValueError:
+        # display an error message if the input is not a valid numeric value
+        messagebox.showerror("invalid input", "please enter a valid numeric value for salary. ")
 
-        # create a new window to display the result with larger size
-        result_window = Toplevel(root)
-        result_window.title("Result")
-        result_window.geometry("300x150") # set the size of the result windo
+# Main tkinter window
+root = Tk()
+root.title("Tax Finder")
+root.configure(bg= "gray") # set background color to gray
