@@ -24,3 +24,15 @@ def answer():
         # display the result in a label widget with a more formal font
         result_label = Label(result_window, text=f"Amount: ${de_amount:.2f}\nTax: ${tax_amount:.2f}\nFinal amount: ${salary:.2f}", font=("Helvetica", 12))
         result_label.pack(pady=20)
+except ValueError:
+        # display an error message if the input is not a valid numeric value
+        messagebox.showerror("invalid input", "please enter a valid numeric value for salary. ")
+
+# Main tkinter window
+root = Tk()
+root.title("Tax Finder")
+root.configure(bg= "gray") # set background color to gray
+
+# label and entry for entering salary amount
+Amount = Label(root, text="Salary Amount: ", bg='gray', fg= 'white') # set text color to white
+Amount.grid(row=0, column=0)
