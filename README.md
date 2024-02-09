@@ -2,4 +2,5 @@
 # CODE SCREENSHOTS
 ![pythonProject – main py 2_8_2024 8_29_06 PM](https://github.com/gracious006/COS-project/assets/149418735/7f9d4566-3d0d-4724-b3be-4d2deb8f3837)
 ![pythonProject – main py 2_8_2024 8_30_03 PM](https://github.com/gracious006/COS-project/assets/159062307/cd184d11-49df-4c80-bdee-e5e81e5a210e)
+![Screenshot (24)](https://github.com/gracious006/COS-project/assets/149418735/1e02f379-2227-4454-8997-180f2bc4d7b1)
 
