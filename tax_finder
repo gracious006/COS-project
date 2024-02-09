@@ -38,5 +38,21 @@ Amount = Label(root, text="Salary Amount: ", bg='gray', fg= 'white') # set text 
 Amount.grid(row=0, column=0)
 Amount_entry = Entry(root, width=35, borderwidth=5)
 Amount_entry.grid(row=0, column=1)
+Amount.grid(row=0, column=0)
+
+Amount_entry = Entry(root, width=35, borderwidth=5)
+Amount_entry.grid(row=0, column=1)
+
+# button to calculate tax and display result with the original color
+amount_button = Button(root, text="Calculate Tax", command=answer, bg='gray', fg='white') # set text color to white
+amount_button.grid(row=1, column=1)
+
+# button to exit the program at  row 5, column 5
+button_quit = Button(root, text="Exit Program", command=root.quit, bg='gray', fg='white') # set text color to white
+button_quit.grid(row=5, column=5)
+
+# start the Tkinter even loop
+root.mainloop()
+
 
 
