@@ -16,4 +16,11 @@ def answer():
 
         # calculate tax and salary using calc_tax function
         tax_amount, salary = calc_tax(de_amount, vat_rate)
+ # create a new window to display the result with larger size
+        result_window = Toplevel(root)
+        result_window.title("Result")
+        result_window.geometry("300x150") # set the size of the result window
 
+        # display the result in a label widget with a more formal font
+        result_label = Label(result_window, text=f"Amount: ${de_amount:.2f}\nTax: ${tax_amount:.2f}\nFinal amount: ${salary:.2f}", font=("Helvetica", 12))
+        result_label.pack(pady=20)
