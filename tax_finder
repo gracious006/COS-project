@@ -1,12 +1,10 @@
- # display the result in a label widget with a more formal font
-        result_label = Label(result_window, text=f"Amount: ${de_amount:.2f}\nTax: ${tax_amount:.2f}\nFinal amount: ${salary:.2f}", font=("Helvetica", 12))
-        result_label.pack(pady=20)
+from tkinter import *
+from tkinter import messagebox
 
-    except ValueError:
-        # display an error message if the input is not a valid numeric value
-        messagebox.showerror("invalid input", "please enter a valid numeric value for salary. ")
+# Function to calculate tax and salary
+def calc_tax(de_amount, vat_rate):
+    tax_amount = de_amount * vat_rate
+    salary = de_amount - tax_amount
+    return tax_amount, salary
 
-# Main tkinter window
-root = Tk()
-root.title("Tax Finder")
-root.configure(bg= "gray") # set background color to gray
+
