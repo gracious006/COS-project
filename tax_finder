@@ -26,12 +26,12 @@ def answer():
         result_label.pack(pady=20)
 except ValueError:
         # display an error message if the input is not a valid numeric value
-        messagebox.showerror("invalid input", "Please enter a valid numeric value for salary. ")
+        messagebox.showerror("invalid input", "please enter a valid numeric value for salary. ")
 
 # Main tkinter window
 root = Tk()
 root.title("Tax Finder")
-root.configure(bg= "gray") # set background colour to gray
+root.configure(bg= "gray") # set background color to gray
 
 # label and entry for entering salary amount
 Amount = Label(root, text="Salary Amount: ", bg='gray', fg= 'white') # set text color to white
@@ -43,7 +43,7 @@ Amount.grid(row=0, column=0)
 Amount_entry = Entry(root, width=35, borderwidth=5)
 Amount_entry.grid(row=0, column=1)
 
-# button to calculate tax and display result with the original colour
+# button to calculate tax and display result with the original color
 amount_button = Button(root, text="Calculate Tax", command=answer, bg='gray', fg='white') # set text color to white
 amount_button.grid(row=1, column=1)
 
